@@ -129,6 +129,10 @@ section body {
     background-color: var(--black);
 }
 
+.exclusion{
+    mix-blend-mode: normal;
+}
+
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -386,4 +390,8 @@ section body {
     .farewell .button svg {
         margin-left: 1.57rem
     }
+}
+
+.description {
+    color: #000000
 }
