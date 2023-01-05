@@ -1,145 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>WellX - Well Management</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <base href="/">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Monumento Software</title>
-    <meta name="description" content="Produtos de software e soluções em dados." />
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--Monumento Meta Data-->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:type" content="business.business">
-    <meta property="og:url" content="https://vtex.com">
-    <meta property="og:title" content="Monumento Software" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:description" content="Produtos de software e soluções em dados" />
+    <meta property="og:title" content="Monumento Software">
+    <meta property="og:url" content="https://Monumentosoftware.github.io.com">
+    <meta name="description" content="Produtos de software e soluções em dados.">
+    <meta property="og:description" content="Produtos de software e soluções em dados">
     <meta property="business:contact_data:locality" content="Recife">
     <meta property="business:contact_data:country_name" content="Brazil">
     <meta property="business:contact_data:region" content="Pernambuco">
+    <meta property="business:contact_data:email" content="contato@monumentosoftware.com">
     <meta property="place:location:latitude" content="-8.0302743">
     <meta property="place:location:longitude" content="-34.9223072">
-</head>
+  <style>@import"https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap";:root{--content-width:1365px;--units-base:8px;--units-small:calc(2 * var(--units-base));--units-regular:calc(1.5 * var(--units-small));--units-large:calc(1.5 * var(--units-regular));--units-huge:calc(2 * var(--units-large));--font-sizes-300:14px;--font-sizes-400:16px;--font-sizes-500:calc(var(--font-sizes-400) * 1.25);--font-sizes-600:calc(var(--font-sizes-500) * 1.25);--font-sizes-700:calc(var(--font-sizes-600) * 1.25);--font-sizes-800:calc(var(--font-sizes-700) * 1.25);--font-sizes-900:calc(var(--font-sizes-800) * 1.25);--ion-color-primary:#001332;--ion-color-primary-rgb:56, 128, 255;--ion-color-primary-contrast:#ffffff;--ion-color-primary-contrast-rgb:255, 255, 255;--ion-color-primary-shade:#3171e0;--ion-color-primary-tint:#4c8dff;--ion-color-secondary:#3dc2ff;--ion-color-secondary-rgb:61, 194, 255;--ion-color-secondary-contrast:#ffffff;--ion-color-secondary-contrast-rgb:255, 255, 255;--ion-color-secondary-shade:#36abe0;--ion-color-secondary-tint:#50c8ff;--ion-color-tertiary:#5260ff;--ion-color-tertiary-rgb:82, 96, 255;--ion-color-tertiary-contrast:#ffffff;--ion-color-tertiary-contrast-rgb:255, 255, 255;--ion-color-tertiary-shade:#4854e0;--ion-color-tertiary-tint:#6370ff;--ion-color-success:#2dd36f;--ion-color-success-rgb:45, 211, 111;--ion-color-success-contrast:#ffffff;--ion-color-success-contrast-rgb:255, 255, 255;--ion-color-success-shade:#28ba62;--ion-color-success-tint:#42d77d;--ion-color-warning:#ffc409;--ion-color-warning-rgb:255, 196, 9;--ion-color-warning-contrast:#000000;--ion-color-warning-contrast-rgb:0, 0, 0;--ion-color-warning-shade:#e0ac08;--ion-color-warning-tint:#ffca22;--ion-color-danger:#eb445a;--ion-color-danger-rgb:235, 68, 90;--ion-color-danger-contrast:#ffffff;--ion-color-danger-contrast-rgb:255, 255, 255;--ion-color-danger-shade:#cf3c4f;--ion-color-danger-tint:#ed576b;--ion-color-dark:#222428;--ion-color-dark-rgb:34, 36, 40;--ion-color-dark-contrast:#ffffff;--ion-color-dark-contrast-rgb:255, 255, 255;--ion-color-dark-shade:#1e2023;--ion-color-dark-tint:#383a3e;--ion-color-medium:#92949c;--ion-color-medium-rgb:146, 148, 156;--ion-color-medium-contrast:#ffffff;--ion-color-medium-contrast-rgb:255, 255, 255;--ion-color-medium-shade:#808289;--ion-color-medium-tint:#9d9fa6;--ion-color-light:#f4f5f8;--ion-color-light-rgb:244, 245, 248;--ion-color-light-contrast:#000000;--ion-color-light-contrast-rgb:0, 0, 0;--ion-color-light-shade:#d7d8da;--ion-color-light-tint:#f5f6f9}@media (prefers-color-scheme: dark){body{--ion-color-primary:#428cff;--ion-color-primary-rgb:66, 140, 255;--ion-color-primary-contrast:#ffffff;--ion-color-primary-contrast-rgb:255, 255, 255;--ion-color-primary-shade:#3a7be0;--ion-color-primary-tint:#5598ff;--ion-color-secondary:#50c8ff;--ion-color-secondary-rgb:80, 200, 255;--ion-color-secondary-contrast:#ffffff;--ion-color-secondary-contrast-rgb:255, 255, 255;--ion-color-secondary-shade:#46b0e0;--ion-color-secondary-tint:#62ceff;--ion-color-tertiary:#6a64ff;--ion-color-tertiary-rgb:106, 100, 255;--ion-color-tertiary-contrast:#ffffff;--ion-color-tertiary-contrast-rgb:255, 255, 255;--ion-color-tertiary-shade:#5d58e0;--ion-color-tertiary-tint:#7974ff;--ion-color-success:#2fdf75;--ion-color-success-rgb:47, 223, 117;--ion-color-success-contrast:#000000;--ion-color-success-contrast-rgb:0, 0, 0;--ion-color-success-shade:#29c467;--ion-color-success-tint:#44e283;--ion-color-warning:#ffd534;--ion-color-warning-rgb:255, 213, 52;--ion-color-warning-contrast:#000000;--ion-color-warning-contrast-rgb:0, 0, 0;--ion-color-warning-shade:#e0bb2e;--ion-color-warning-tint:#ffd948;--ion-color-danger:#ff4961;--ion-color-danger-rgb:255, 73, 97;--ion-color-danger-contrast:#ffffff;--ion-color-danger-contrast-rgb:255, 255, 255;--ion-color-danger-shade:#e04055;--ion-color-danger-tint:#ff5b71;--ion-color-dark:#f4f5f8;--ion-color-dark-rgb:244, 245, 248;--ion-color-dark-contrast:#000000;--ion-color-dark-contrast-rgb:0, 0, 0;--ion-color-dark-shade:#d7d8da;--ion-color-dark-tint:#f5f6f9;--ion-color-medium:#989aa2;--ion-color-medium-rgb:152, 154, 162;--ion-color-medium-contrast:#000000;--ion-color-medium-contrast-rgb:0, 0, 0;--ion-color-medium-shade:#86888f;--ion-color-medium-tint:#a2a4ab;--ion-color-light:#222428;--ion-color-light-rgb:34, 36, 40;--ion-color-light-contrast:#ffffff;--ion-color-light-contrast-rgb:255, 255, 255;--ion-color-light-shade:#1e2023;--ion-color-light-tint:#383a3e}}html{--ion-font-family:var(--ion-default-font)}body{background:var(--ion-background-color)}@supports (padding-top: 20px){html{--ion-safe-area-top:var(--ion-statusbar-padding)}}@supports (padding-top: constant(safe-area-inset-top)){html{--ion-safe-area-top:constant(safe-area-inset-top);--ion-safe-area-bottom:constant(safe-area-inset-bottom);--ion-safe-area-left:constant(safe-area-inset-left);--ion-safe-area-right:constant(safe-area-inset-right)}}@supports (padding-top: env(safe-area-inset-top)){html{--ion-safe-area-top:env(safe-area-inset-top);--ion-safe-area-bottom:env(safe-area-inset-bottom);--ion-safe-area-left:env(safe-area-inset-left);--ion-safe-area-right:env(safe-area-inset-right)}}*{box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}html{width:100%;height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}html:not(.hydrated) body{display:none}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;margin:0;padding:0;position:fixed;width:100%;max-width:100%;height:100%;max-height:100%;transform:translateZ(0);text-rendering:optimizeLegibility;overflow:hidden;touch-action:manipulation;-webkit-user-drag:none;-ms-content-zooming:none;word-wrap:break-word;overscroll-behavior-y:none;-webkit-text-size-adjust:none;text-size-adjust:none}html{font-family:var(--ion-font-family)}*{font-family:Titillium Web,sans-serif;-webkit-font-smoothing:antialiased;margin:0;padding:0}</style><link rel="stylesheet" href="styles.a7c6fbba50db34fb.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.a7c6fbba50db34fb.css"></noscript></head>
 
-<body>
-    <nav class="top-nav">
-        <div>
-            <a href="#">
-                <img src="./assets/img/logo.png"></img>
-            </a>
-        </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <a href="#">
-                <li>Banco de dados</li>
-            </a>
-            <a href="#">
-                <li>Serviços</li>
-            </a>
-            <a href="#">
-                <li>Sobre</li>
-            </a>
-            <a href="#">
-                <li>Artigos</li>
-            </a>
+  <body>
+    <app-root></app-root>
+  <script src="runtime.24b1dd6a7f73ba14.js" type="module"></script><script src="polyfills.3ebd5e0cff18d293.js" type="module"></script><script src="main.e63dc81992238b73.js" type="module"></script>
 
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-image">
-            <div class="hero-text">
-                <div class="multiply">
-                    <h1>Data solutions for the oil industry!</h1>
-                </div>
-                <a class="button" href="#servicços">
-                    Conheça nossass soluções
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 23 22">
-                        <path
-                            d="M10.5 16.024V.5h3v15.22l7.197-7.196 2.121 2.121L12 21.463l-.151-.151-.152.151L.879 10.645 3 8.524l7.5 7.5z"
-                            fill-rule="nonzero"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="bg-sand hero-block home-section">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-md-6">
-                    <div class="image_container"><img src="./assets/img/165240512.jpg" alt=""></div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="text_container">
-                        <div class="section-title title-ex1">
-                            <h2 class="title-text">Well-X</h2>
-                            <p>Todos os dados de poços em um só lugar.</p>
-                        </div>
-                        <p class="description">O gerenciamento de dados de poços para empresas de petróleo e gás deve
-                            fazer parte de uma visão mais ampla de <strong> gerenciamento de dados de
-                                subsuperfície.</strong>
-                            Nosso sistema de gerenciamento de poços Well-X é capaz de processar todos os arquivos de
-                            perfis digitais de poços, assim como dados de sísmica de poço, e dados sísmicos em geral.
-                            Modelos de de busca com base em perfis similares, clusterização por DBSCAN e várias outras
-                            features, totalmente customizáveis.
-                        </p><a class="btn btn-default btn-primary black" href="#">Conheça o Well-X</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-white hero-block home-section">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-md-6 ">
-                    <div class="text_container">
-                        <div class="section-title title-ex1">
-                            <h2 class="title-text">Arquivos <strong>.las, .lis, .dlis.</strong></h2>
-                        </div>
-                        <p class="description">Acesse rapidamente todos os dados de perfis digitais de maneira rápida e
-                            fácil.<br>
-                            Nosso sistema permite a leitura de todos os formatos de <strong>perfis digitais de
-                                poços</strong>, rápida vizualização em gráficos, checagem de qualidade, manipulação de
-                            dataframes e geração de modelos.<br>
-                            Tecnologia 100%  customizável, disponvel em desktop e na web.
-                        </p><a class="btn btn-default btn-primary" href="/cadastro">Descubra como!</a>
-                    </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="image_container"><img src="./assets/img/zbynek-burival-GrmwVnVSSdU-unsplash.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer footer-classic bg-dark">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-md-8 ">
-                    <div class="text-center"><a href="/"><img class="exclusion" src="./assets/img/logo.png"></a>
-                        <p>Você deseja automatizar sua gestão e integrar seus dados e análises do setor de óleo e gás?
-                            <br>
-                            Fale conosco.
-                        </p>
-
-                    </div>
-                </div><a href="#home" class="backToTop"><i class="fa fa-chevron-up"></i></a>
-            </div>
-            <div class="copyright">
-                <hr>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 ">
-                        <div class="copyRight_text text-center">
-                            <p>© Todos os direitos reservados - Monumento Software 2022. - </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </footer>
-</body>
-
-</html>
+</body></html>
